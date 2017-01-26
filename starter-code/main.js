@@ -1,12 +1,26 @@
 console.log("JS file is connected to HTML! Woo!")
-/* I'm not sure what I'm supposed to comment, but you asked that I comment */
 
-var cardOne = "queen"; 
-var cardTwo = "queen"; 
-var cardThree = "king";
-var cardFour = "king";
+// var cardOne = 'queen'; 
+// var cardTwo = 'queen'; 
+// var cardThree = 'king';
+// var cardFour = 'king';
 
-if (cardFour === cardTwo) {
+var gameBoard = document.getElementById('game-board'); 
+
+function createCards() {
+	for (var i=0; i<4; i++) {
+	var cardElement = document.createElement('div');
+	cardElement.className = 'card';
+	gameBoard.appendChild(cardElement);
+}
+
+}
+
+
+
+
+
+/*if (cardFour === cardTwo) {
 
 alert('Sorry, try again.'); 
 
@@ -31,6 +45,6 @@ alert('Sorry, try again.')
 alert('Sorry, try again.')
 
 } 
-
+*/
 
 
